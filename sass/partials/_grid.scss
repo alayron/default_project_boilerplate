@@ -1,0 +1,66 @@
+/* =============================================================================
+	Grid-Generator v 0.1
+	========================================================================== */
+
+$grid-max-cols: 12;
+$grid-cols-margin: 0.70175439%;
+$grid-container-max-width: 1140px;
+
+$grid-col-1-width: ( (100% / $grid-max-cols) );
+
+// Clearfix src(http://web-design-weekly.com/2013/05/12/handy-sass-mixins/)
+@mixin clearfix() {
+    & {
+        *zoom: 1;
+    }
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+// Grid-Klassen
+
+@for $i from 1 through $grid-max-cols {
+	.grid-col-#{$i} {
+		width: ( ($grid-col-1-width * $i) - ( 2 * $grid-cols-margin));
+		float: left;
+		margin: 0 $grid-cols-margin;
+		&.margin-virgin {
+			width: $grid-col-1-width * $i;
+			margin: 0 0;
+		}
+		&.margin-alpha {
+			width: ($grid-col-1-width * $i) - $grid-cols-margin;
+			margin: 0 $grid-cols-margin 0 0;
+		}
+		&.margin-omega {
+			width: ($grid-col-1-width * $i) - $grid-cols-margin;
+			margin: 0 0 0 $grid-cols-margin;
+		}
+	}
+}
+
+// Repel-Klassen
+
+@for $i from 1 through $grid-max-cols {
+	.repel-#{$i} {
+		margin-left: ( ($grid-col-1-width * $i) + $grid-cols-margin );
+	}
+	.soak-#{$i} {
+		margin-right: ( ($grid-col-1-width * $i) + $grid-cols-margin );
+	}
+}
+
+// Container-Klassen
+
+.grid-container {
+	margin: 0 auto;
+	clear: left;
+	max-width: $grid-container-max-width;
+	@include clearfix();
+}

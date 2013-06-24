@@ -1,0 +1,5 @@
+.DS_store
+.sass-cache
+*.scssc
+.scssc
+*.css
