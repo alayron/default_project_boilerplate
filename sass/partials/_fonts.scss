@@ -1,8 +1,29 @@
 /* =============================================================================
-	Fonts
-	========================================================================== */
+	fonts
 	
-	@mixin main_font {
-		font-family: "PT Sans","Myriad Pro", "Segoe UI", "Helvetica Neue", Verdana, sans-serif;
+	# defines Font-families in Classes, use them with @extend
+	# general typographical declarations; h1-h6, p, blockquote
+	
+	! do not use Nesting or ascendant selectors to overwrite these rules within this file, like .article { h1, h2 { .. } }, write a partial instead
+	
+	========================================================================== */
+
+	
+	// Load Webfont: Lato (http://www.google.com/fonts/specimen/Lato)
+	@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+	
+	.font-main {
+		font-family: "Lato", "PT Sans","Myriad Pro", "Segoe UI", "Helvetica Neue", Verdana, sans-serif;
+		font-weight: 200;
+	}
+	.font-secondary {
+		font-famil: "Georgia", "Times New Roman", serif;
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: bold;
+		margin: 0;
+	}
+	p {
 		font-weight: 100;
 	}

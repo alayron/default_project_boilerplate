@@ -1,61 +1,42 @@
-# [HTML5 Boilerplate](http://html5boilerplate.com)
+# Default Project Boilerplate [working title]
 
-HTML5 Boilerplate is a professional front-end template for building fast,
-robust, and adaptable web apps or sites.
+The Default Project Boilerplate's pourpose is it, to provide a fast and easy to use boilerplate for getting a project started. This is however a *compass project* and uses *scss features*. It will not fullfill its meaning without an offline workflow. I used the *Html5 Boilerplate Project* as a basis to develop this boilerplate. Feel free to use it, modify and change it in any way you want. Create an issue or get into contact with my any other way, if you feel like there is something missing / done wrong in this project.
 
-This project is the product of many years of iterative development and combined
-community knowledge. It does not impose a specific development philosophy or
-framework, so you're free to architect your code in the way that you want.
+## Features (in short)
 
-* Source: [https://github.com/h5bp/html5-boilerplate](https://github.com/h5bp/html5-boilerplate)
-* Homepage: [http://html5boilerplate.com](http://html5boilerplate.com)
-* Twitter: [@h5bp](http://twitter.com/h5bp)
++ Very simple fluid grid generator for layouting very quickly
++ FontAwesome 3.2.1
++ normalize.css 1.1.1
++ jQuery 1.9.1 (minified)
++ modernizr 2.6.2 (minified)
++ Mixins for
+	+ Mediaqueries (breakpoints)
+	+ clearfix
++ structured scss bootstrap with usefull predefined partials
+	+ colors
+	+ fonts
+	+ generals
 
+## Features (explained)
 
-## Quick start
+work in progress
 
-Choose one of the following options:
+## versions
 
-1. Download the latest stable release from
-   [html5boilerplate.com](http://html5boilerplate.com/) or a custom build from
-   [Initializr](http://www.initializr.com).
-2. Clone the git repo — `git clone
-   https://github.com/h5bp/html5-boilerplate.git` - and checkout the tagged
-   release you'd like to use.
+### 1.0.1
 
++ readme.md updated
++ updated FontAwesome to 3.2.1
++ replaced color-variables with another color-scheme
++ improvments to the scss bootstrap
++ unifiyed scss partials comments
++ imports ie.scss if lte IE 9
++ removed codekit comments from config.rb
++ renamed the config.rb constant fonts_dir to "font"
++ error_reporting set to not show notices
++ replaced "Ubuntu" & "Source Sans Pro" with "Lato" as default sans-serif webfont
++ added _generalls.scss & _mixins.scss to keep the bootstrap screen.scss clean
 
-## Features
+### 1.0.0
 
-* HTML5 ready. Use the new elements with confidence.
-* Cross-browser compatible (Chrome, Opera, Safari, Firefox 3.6+, IE6+).
-* Designed with progressive enhancement in mind.
-* Includes [Normalize.css](http://necolas.github.com/normalize.css/) for CSS
-  normalizations and common bug fixes.
-* The latest [jQuery](http://jquery.com/) via CDN, with a local fallback.
-* The latest [Modernizr](http://modernizr.com/) build for feature detection.
-* IE-specific classes for easier cross-browser control.
-* Placeholder CSS Media Queries.
-* Useful CSS helpers.
-* Default print CSS, performance optimized.
-* Protection against any stray `console.log` causing JavaScript errors in
-  IE6/7.
-* An optimized Google Analytics snippet.
-* Apache server caching, compression, and other configuration defaults for
-  Grade-A performance.
-* Cross-domain Ajax and Flash.
-* "Delete-key friendly." Easy to strip out parts you don't need.
-* Extensive inline and accompanying documentation.
-
-
-## Documentation
-
-Take a look at the [documentation table of contents](doc/TOC.md). This
-documentation is bundled with the project, which makes it readily available for
-offline reading and provides a useful starting point for any documentation you
-want to write about your project.
-
-
-## Contributing
-
-Anyone and everyone is welcome to [contribute](CONTRIBUTING.md). Hundreds of
-developers have helped make the HTML5 Boilerplate what it is today.
++ initial commit

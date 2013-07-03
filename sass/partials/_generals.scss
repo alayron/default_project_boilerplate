@@ -1,0 +1,80 @@
+/* =============================================================================
+	Generals
+	
+	# overwrites imported resets
+	# general declarations
+	# defines Helper-Classes
+	
+	========================================================================== */
+	
+	/* ====== overwrite resets ====== */
+	
+	a {
+		color: inherit;
+		text-decoration: none;
+		@include transition(all .25s linear);
+	}
+	
+	// Browser-Outline on :focus
+	*:focus {
+		outline: none;
+	}
+	
+	/* ====== generelle deklarations ====== */
+	
+	body, html {
+		background-color: $color-bg;
+		color: $color-dark;
+		@extend .font-main;
+	}
+
+	/* ====== Helper Classes ====== */
+	
+	// blockelements Helper Classes
+	.overauto {
+		overflow: auto;
+	}
+	.maauto {
+		margin: 0 auto;
+	}
+	
+	// show, hide, transparentize...
+	.disabled {
+		display: none;
+	}
+	.enabled {
+		display: block;
+	}
+	.invisible {
+		opacity: 0;
+	}
+	.visible {
+		opacity: 1;
+	}
+	
+	// floating, clearing...
+	.clear {
+		clear: both;
+	}
+	.clearfix {
+		@include clearfix();
+	}
+	.fright {
+		float: right;
+		@extend .clearfix;
+	}
+	.fleft {
+		float: left;
+		@extend .clearfix;
+	}
+	
+	// aligning
+	.tacenter {
+		text-align: center;
+	}
+	.taleft {
+		text-align: left;
+	}
+	.taright {
+		text-align: right;
+	}
