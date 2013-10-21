@@ -1,5 +1,6 @@
 # require any plugins here, eg: susy
-# require "susy"
+
+require "susy"
 
 http_path = "/"
 css_dir = "css"

@@ -19,15 +19,17 @@
 	
 	/* ====== Resets & Normalize ====== */
 	
-	@import "externs/normalize";
+	//@import "externs/normalize";
 	
 	/* ====== Partials ====== */
 	
 	@import 'partials/colors';
 	@import 'partials/mixins';
+	@import 'susy';
+	@import 'partials/susy-conf';
 	@import 'partials/generals';
-	@import 'partials/grid';
 	@import 'partials/fonts';
+	
 	
 	// FontAwesome 3.2.0
 	@import 'font-awesome/font-awesome.scss';
