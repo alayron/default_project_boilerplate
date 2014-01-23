@@ -2,10 +2,14 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<?php
-		require 'tpl/head.tpl.php';
-		
 		// turns of Notices in php error reporting
 		error_reporting(E_ALL ^ E_NOTICE);
+		
+		// Global.inc
+		require('inc/global.inc.php');
+		
+		// Head
+		require('tpl/head.tpl.php');
 	?>
     <body>
 		<?php
@@ -19,5 +23,5 @@
 			
 		?>
     </body>
-    <?php require 'tpl/foot.tpl.php'; ?>
+    <?php require('tpl/foot.tpl.php'); ?>
 </html>
