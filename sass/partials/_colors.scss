@@ -13,3 +13,71 @@
 	$color-bright: #d8ecb4;
 	
 	$color-bg: #f9f9f2;
+	
+	/* ====== Fill-Classes ====== */
+	
+	// Main colors
+	.fill--color-primary {
+		background-color: $color-primary;
+	}
+	.fill--color-secondary {
+		background-color: $color-secondary;
+	}
+	.fill--color-trinary {
+		background-color: $color-trinary;
+	}
+	
+	// Dark & Bright colors
+	.fill--color-dark {
+		background-color: $color-dark;
+	}
+	.fill--color-bright {
+		background-color: $color-bright;
+	}
+	
+	// Background colors
+	.fill--color-bg {
+		background-color: $color-bg;
+	}
+	
+	// misc colors
+	.fill--color-white {
+		background-color: #fff;
+	}
+	
+	/* ====== Txt-Classes ====== */
+	
+	// Main colors
+	.txt--color-primary {
+		color: $color-primary;
+	}
+	.txt--color-secondary {
+		color: $color-secondary;
+	}
+	.txt--color-trinary {
+		color: $color-trinary;
+	}
+	
+	// Dark & Bright colors
+	.txt--color-dark {
+		color: $color-dark;
+	}
+	.txt--color-bright {
+		color: $color-bright;
+	}
+	
+	// Background colors
+	.txt--color-bg {
+		color: $color-bg;
+	}
+	
+	// misc colors
+	.txt--color-white {
+		color: #fff;
+	}
+	
+	.swatch {
+		height: 6em;
+		width: 6em;
+		line-height: 6em;
+	}

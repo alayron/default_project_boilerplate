@@ -16,6 +16,7 @@
 	@import "compass/css3/transform";
 	@import "compass/css3/transition";
 	@import "compass/css3/filter";
+	@import "compass/layout/sticky-footer";
 	
 	/* ====== Resets & Normalize ====== */
 	
@@ -29,6 +30,8 @@
 	@import 'partials/susy-conf';
 	@import 'partials/generals';
 	@import 'partials/fonts';
+	@import 'partials/layout';
+	@import 'partials/footer';
 	
 	
 	// FontAwesome 3.2.0

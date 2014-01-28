@@ -23,7 +23,6 @@
 	/* ====== generelle deklarations ====== */
 	
 	body, html {
-		background-color: $color-bg;
 		color: $color-dark;
 		@extend .font-main;
 	}

@@ -1,0 +1,19 @@
+/* =============================================================================
+	General Layout - Footer, Wrapper, Header, Page
+	========================================================================== */
+	
+	@include sticky_footer(80px, ".wrapper_global", ".wrapper_global--footer", ".footer_global");
+	
+	.wrapper_global {
+		@include container;
+	}
+	
+	/* ====== Swatches ====== */
+	
+	.swatch--listed {
+		@include span-columns(4, 12);
+		margin-bottom: 1em;
+		&.grid--last {
+			@include span-columns(4 omega, 12);
+		}
+	}

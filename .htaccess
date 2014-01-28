@@ -1,0 +1,9 @@
+RewriteEngine on
+
+
+
+# Frontend Controller Pages
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule	([a-zA-Z0-9_-]+)$		/default_project_boilerplate/index.php?content=$1 [L]

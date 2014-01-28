@@ -11,15 +11,39 @@
 		// Head
 		require('tpl/head.tpl.php');
 	?>
-    <body>
+    <body class="fill--color-bg">
 		<?php
 			
-			// Includes template files based on the Url; &content=testcase
-			switch( $_REQUEST['content'] ) {
-				default:
-					include 'content/home.tpl.php';
-					break;
+			// includes the navigation
+			include 'tpl/navigation.tpl.php';
+			
+
+			// Megainclude
+			if ( $_REQUEST['content'] ) {
+				$content = $_REQUEST['content'];
+				if ( ! $navigation_path = check_include($content) ) {
+					$content = '404.tpl.php';
+					include 'content/404.tpl.php';
+				} else {
+					$content = FILE_PATH.'/'.implode('/', $navigation_path);
+					if ( is_dir($content) ) {
+						if ( file_exists($content.'/landing.tpl.php') ){
+							include $content.'/landing.tpl.php';
+						} else {
+							include 'content/404.tpl.php';
+						}
+					} else if ( file_exists($content.'.tpl.php') ) {
+						include $content.'.tpl.php';
+					} else {
+						include 'content/404.tpl.php';
+					}
+				}
+			} else {
+				include 'content/home.tpl.php';
 			}
+			
+			// Includes the footer
+			include 'tpl/footer.tpl.php';
 			
 		?>
     </body>
