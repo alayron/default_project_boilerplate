@@ -5,15 +5,15 @@
 	@include sticky_footer(80px, ".wrapper_global", ".wrapper_global--footer", ".footer_global");
 	
 	.wrapper_global {
-		@include container;
+		@include container(60em);
 	}
 	
 	/* ====== Swatches ====== */
 	
 	.swatch--listed {
-		@include span-columns(4, 12);
+		@include span(4 of 12);
 		margin-bottom: 1em;
 		&.grid--last {
-			@include span-columns(4 omega, 12);
+			@include last;
 		}
 	}
