@@ -1,7 +1,5 @@
 RewriteEngine on
 
-
-
 # Frontend Controller Pages
 
 RewriteCond %{REQUEST_FILENAME} !-f
