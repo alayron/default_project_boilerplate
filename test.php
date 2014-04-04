@@ -1,4 +1,4 @@
 <?php
-	echo $_SERVER['REMOTE_ADDR'];
-	echo pwd();
+	echo $_SERVER['SERVER_ADDR'];
+	echo getcwd();
 ?>
