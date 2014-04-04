@@ -2,4 +2,13 @@
 	Susy-Configurations
 	========================================================================== */
 	
-	//$susy: ();
+	// Default Grid Configuration
+	$susy: (
+		columns:	12,
+		debug: (
+			image: show,
+			color: tomato,
+			output: overlay,
+			toggle: top right,
+		)
+	);

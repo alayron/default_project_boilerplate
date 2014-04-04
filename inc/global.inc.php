@@ -4,9 +4,11 @@
 	path constants
 	================================================= */
 	
-	define('HTTP_ROOT', '/default_project_boilerplate');
+	$project_name = 'default_project_boilerplate';
 	
-	define('FILE_PATH', '/Library/WebServer/Documents/default_project_boilerplate');
+	define('HTTP_ROOT', '/'.$project_name);
+	
+	define('FILE_PATH', '/Library/WebServer/Documents/'.$project_name);
 
 /* ====================================================
 	navigation object
